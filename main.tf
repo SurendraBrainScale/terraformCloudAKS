@@ -1,5 +1,5 @@
 provider "azurerm" {
-  version = "=1.43.0"
+  version = ">= 0.12"
 }
 
 resource "azurerm_resource_group" "resource_group" {
