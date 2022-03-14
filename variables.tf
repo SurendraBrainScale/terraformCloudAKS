@@ -1,14 +1,17 @@
 ﻿
 variable "cluster_name" {
-
+  description = "AKS cluster name"
+  default     = "runItOnCloud"
 }
 
 variable "resource_group_name" {
-
+  description = "name of the resource group to deploy AKS cluster in"
+  default     = "runitoncloud"
 }
 
 variable "environment" {
-
+  description = "name of the enviorment"
+  default     = "runitoncloud"
 }
 
 variable "location" {
@@ -32,4 +35,6 @@ variable "service_principal" {
 }
 
 variable dns_prefix {
+  description = "DNS prefix for the AKS Cluster"
+  default     = "runitoncloud"
 }
